@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import path from 'path'
 import fse from 'fs-extra'
 import getPackages from './package.js'
@@ -62,12 +64,12 @@ const appName = createAppName(path.resolve(destinationPath));
 // Generate application
 emptyDirectory(destinationPath, function (empty) {
 
-    // if (empty) {
-    createApplication(appName, destinationPath)
-    // } else {
-    //     console.error("❌ The project folder is not empty! \n❗Please try again with an empty folder.")
-    //     process.exit(0)
-    // }
+    if (empty) {
+        createApplication(appName, destinationPath)
+    } else {
+        console.error("❌ The project folder is not empty! \n❗Please try again with an empty folder.")
+        process.exit(0)
+    }
 
 })
 
