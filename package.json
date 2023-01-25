@@ -1,17 +1,10 @@
 {
-  "name": "express-generator-mongodb-es",
-  "version": "0.0.0",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "start": "node ./bin/www"
-  },
-  "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "dotenv": "^16.0.3",
-    "express": "~4.16.1",
-    "mongodb": "^4.13.0",
-    "morgan": "~1.9.1"
-  }
+    "name": "generate-express-app",
+    "bin": {
+        "generate-express-app": "./bin/index.js"
+    },
+    "type": "module",
+    "dependencies": {
+        "fs-extra": "^11.1.0"
+    }
 }
