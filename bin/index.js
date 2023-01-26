@@ -56,7 +56,7 @@ async function createApplication(name, destination) {
         console.log('   %s cd %s', prompt, destination)
     }
     console.log('   %s npm install', prompt,)
-    console.log('   %s SET DEBUG=%s:* & npm start', prompt, name)
+    console.log('   %s npm start', prompt, name)
     process.exit(0)
 }
 
