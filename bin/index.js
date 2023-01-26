@@ -52,9 +52,10 @@ async function createApplication(name, destination) {
         console.error(err)
     }
 
-
-
-    console.log('   %s cd %s', prompt, destination)
+    if (destination !== '.') {
+        console.log('   %s cd %s', prompt, destination)
+    }
+    console.log('   %s npm install', prompt,)
     console.log('   %s SET DEBUG=%s:* & npm start', prompt, name)
     process.exit(0)
 }
