@@ -34,29 +34,33 @@ async function createApplication(name, destination) {
     if (destination !== '.') {
         fse.mkdir(destination, (error) => error && console.error(error))
     }
+    console.log("🪜")
 
 
     // copy source folder to destination
     try {
         fse.copySync(__dirname + '/../template', destination)
-        console.log()
-        console.log('✅ The Project has been created successfully! 🎉')
-        console.log()
+        console.log("🪜")
     } catch (error) {
         console.error(error)
     }
 
     try {
         await fse.writeJson(destination + '/package.json', getPackages(name))
+        console.log("🪜")
     } catch (err) {
         console.error(err)
     }
+
+    console.log("🪜")
+    console.log('✅ The Project has been created successfully! 🎉')
+    console.log('👉 To get started, run the commands below:')
 
     if (destination !== '.') {
         console.log('   %s cd %s', prompt, destination)
     }
     console.log('   %s npm install', prompt,)
-    console.log('   %s npm start', prompt, name)
+    console.log('   %s npm run start-dev', prompt)
     process.exit(0)
 }
 
