@@ -4,10 +4,6 @@ import { fileURLToPath } from 'url';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 
-//routers
-import indexRouter from './routes/index.js';
-import usersRouter from './routes/users.js';
-
 // apps
 var app = express();
 
@@ -20,6 +16,14 @@ app.use(cookieParser());
 //static file serving
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 app.use(express.static(path.join(__dirname, 'public')));
+
+
+
+// 👇👇👇👇👇👇👇👇👇👇
+
+//routers
+import indexRouter from './routes/index.js';
+import usersRouter from './routes/users.js';
 
 // mount routers
 app.use('/', indexRouter);
