@@ -34,12 +34,12 @@ async function createApplication(name, destination) {
         fse.mkdir(destination, (error) => error && console.error(error))
     }
 
-    var source = path.join(__dirname, '/../template')
-    var destination = destination;
 
     // copy source folder to destination
     try {
-        fse.copySync(source, destination)
+        fse.copySync(__dirname + '/../template', destination)
+        fs.copySync(__dirname + '/../.gitignore', destination)
+
         console.log()
         console.log('✅ The Project has been created successfully! 🎉')
         console.log()
