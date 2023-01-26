@@ -29,6 +29,7 @@ function launchedFromCmd() {
 }
 
 async function createApplication(name, destination) {
+    console.log("Creating a new project 🌪️🌪️🌪️")
 
     if (destination !== '.') {
         fse.mkdir(destination, (error) => error && console.error(error))
@@ -38,8 +39,6 @@ async function createApplication(name, destination) {
     // copy source folder to destination
     try {
         fse.copySync(__dirname + '/../template', destination)
-        fs.copySync(__dirname + '/../.gitignore', destination)
-
         console.log()
         console.log('✅ The Project has been created successfully! 🎉')
         console.log()
