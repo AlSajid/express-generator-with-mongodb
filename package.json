@@ -6,9 +6,9 @@
     },
     "type": "module",
     "dependencies": {
+        "cors": "^2.8.5",
         "fs-extra": "^11.1.0"
     },
-    "devDependencies": {},
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },

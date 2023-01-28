@@ -6,11 +6,11 @@ var router = express.Router();
 const haiku = database.collection("haiku");
 
 
-async function run() {
+const run = async () => {
     try {
 
         /* GET users listing. */
-        router.get('/', async function (request, response, next) {
+        router.get('/', async (request, response, next) => {
 
             const doc = {
                 title: "Record of a Shriveled Datum",
