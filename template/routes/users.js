@@ -1,6 +1,6 @@
 import express from 'express';
 import database from '../db/mongodb.js';
-import userValidationHandler from '../middleware/userValidator.js';
+import userValidationHandler from '../middlewares/userValidator.js';
 var router = express.Router();
 
 //collections

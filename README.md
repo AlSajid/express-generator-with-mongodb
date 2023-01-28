@@ -28,7 +28,7 @@ my-app \
 │&emsp;&emsp;   ├── www.js \
 ├── db \
 │&emsp;&emsp;   ├── mongodb.js \
-├── middleware \
+├── middlewares \
 │&emsp;&emsp;   ├── userValidator.js \
 ├── public \
 │&emsp;&emsp;   ├── image \
