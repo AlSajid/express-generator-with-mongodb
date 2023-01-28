@@ -7,6 +7,7 @@
     "type": "module",
     "dependencies": {
         "cors": "^2.8.5",
+        "express-validator": "^6.14.3",
         "fs-extra": "^11.1.0"
     },
     "scripts": {

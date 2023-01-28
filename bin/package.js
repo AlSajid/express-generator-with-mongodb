@@ -10,6 +10,7 @@ const getPackages = (appName) => {
         dependencies: {
             "cookie-parser": "^1.4.4",
             "cors": "^2.8.5",
+            "express-validator": "^6.14.3",
             debug: "^2.6.9",
             dotenv: "^16.0.3",
             express: "^4.16.1",
