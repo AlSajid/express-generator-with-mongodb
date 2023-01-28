@@ -1,6 +1,6 @@
 import express from 'express';
-import database from '../db/mongodb.js'
-import { userValidator, userValidationHandler } from '../middleware/testBlog.js';
+import database from '../db/mongodb.js';
+import userValidationHandler from '../middleware/userValidator.js';
 var router = express.Router();
 
 //collections
@@ -24,7 +24,7 @@ const run = async () => {
 
         });
 
-        router.post('/',userValidator,userValidationHandler, async (request, response, next) => {
+        router.post('/',userValidationHandler, async (request, response, next) => {
             console.log("Passed validation");
             response.send({ status: "200" });
         });
