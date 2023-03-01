@@ -38,7 +38,7 @@ my-app \
 ├── routes \
 │&emsp;&emsp;   ├── index.js \
 │&emsp;&emsp;   ├── users.js \
-├── app.js \
+├── index.js \
 └── package.json
 
 ## Contributing
