@@ -1,6 +1,6 @@
 {
     "name": "launch-express-app",
-    "version": "1.6.3",
+    "version": "1.6.4",
     "bin": {
         "launch-express-app": "bin/index.js"
     },
