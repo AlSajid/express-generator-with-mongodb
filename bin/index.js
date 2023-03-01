@@ -45,13 +45,6 @@ async function createApplication(name, destination) {
         console.error(error)
     }
 
-    try {
-        await fse.writeJson(destination + '/package.json', getPackages(name))
-        console.log("🪜")
-    } catch (err) {
-        console.error(err)
-    }
-
     console.log("🪜")
     console.log('✅ The Project has been created successfully! 🎉')
     console.log('👉 To get started, run the commands below:')

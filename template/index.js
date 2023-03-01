@@ -21,10 +21,6 @@ app.use(cookieParser());
 
 
 
-
-
-// 👇👇👇👇👇👇👇👇👇👇
-
 //routers
 import indexRouter from './routes/index.js';
 import usersRouter from './routes/users.js';
