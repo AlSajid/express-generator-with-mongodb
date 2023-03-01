@@ -2,7 +2,6 @@
 
 import path from 'path'
 import fse from 'fs-extra'
-import getPackages from './package.js'
 import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
