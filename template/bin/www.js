@@ -1,40 +1,21 @@
 #!/usr/bin/env node
 
-/**
- * Module dependencies.
- */
-
 import app from './../index.js';
 import debug from 'debug';
 import http from 'http';
 
-
-/**
- * Get port from environment and store in Express.
- */
-
 var port = normalizePort(process.env.PORT || '5000');
 app.set('port', port);
 
-/**
- * Create HTTP server.
- */
 
 var server = http.createServer(app);
-
-/**
- * Listen on provided port, on all network interfaces.
- */
-
 server.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
 server.on('error', onError);
 server.on('listening', onListening);
 
-/**
- * Normalize a port into a number, string, or false.
- */
+
 
 function normalizePort(val) {
   var port = parseInt(val, 10);
